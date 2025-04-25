@@ -1,0 +1,89 @@
+/*
+Color/Font Scheme
+
+Font size: 14px
+
+Green: hsl(75, 94%, 57%)
+
+White: hsl(0, 0%, 100%)
+
+Grey 700: hsl(0, 0%, 20%)
+
+Grey 800: hsl(0, 0%, 12%)
+
+Grey 900: hsl(0, 0%, 8%)
+
+Font weights: 400, 600, 700
+*/
+
+/* Import the Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+
+/* Setting Variables */
+:root {
+    --primary-font:"Inter", Helvetica;
+    --green-hsl: hsl(75, 94%, 57%);
+    --grey-light:hsl(0, 0%, 20%);
+    --grey-mid: hsl(0, 0%, 12%);
+    --dark-grey:hsl(0, 0%, 8%);
+    --small-font:400;
+    --mid-font:600;
+    --large-font:700;
+    --font-size:14px;
+}
+
+
+/* Aligns the container into the center, and sets other stuff */
+body {
+    background-color:var(--dark-grey);
+    color:white;
+    margin:0;
+    min-height:100dvh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    font-family:var(--primary-font);
+}
+
+/* Keeps the image rounded */
+h1 {
+    font-weight:var(--large-font);
+}
+h2 {
+    color:var(--green-hsl);
+    font-weight:var(--mid-font);
+    
+}
+h2,
+p {
+    font-size:var(--font-size);
+}
+img {
+    border-radius:50%;
+    max-width:40%;
+}
+p {
+    font-weight:var(--small-font);
+}
+.container {
+    background-color:var(--grey-mid);
+    text-align:center;
+    padding:24px;
+    max-width:24rem;
+    margin-bottom:5px;
+}
+.link {
+    text-decoration:none;
+    display:block;
+    color:inherit;
+    font-weight:var(--mid-font);
+    background-color:var(--grey-light);
+    line-height:1.5;
+    margin-bottom:16px;
+    padding:6px;
+}
+
+.container, .link {
+    border-radius:8px;
+}
